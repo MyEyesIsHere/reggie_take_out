@@ -57,6 +57,12 @@
             <version>3.4.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.76</version>
+        </dependency>
+
         <!--lombok 简化实体类开发-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -83,6 +89,13 @@
             <artifactId>mybatis-plus</artifactId>
             <version>3.5.2</version>
         </dependency>-->
+
+        <!-- redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+
+        </dependency>
     </dependencies>
     <build>
         <plugins>
