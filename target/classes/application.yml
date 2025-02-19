@@ -1,0 +1,26 @@
+#项目端口号
+server:
+  port: 8080
+#设置当前应用的名称
+spring:
+  application:
+    name: reggie_take_out
+  #数据库连接资源
+  datasource:
+    druid:  #配置druid数据库连接池
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/web_reggie?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 123456
+
+  #Mybatisplus配置
+  mybatis-plus:
+    configuration:
+      #在映射实体或属性时，将数据库的下划线字段名映射为驼峰式命名
+      map-underscore-to-camel-case: true
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    global-config:
+      db-config:
+        id-type: assign_id  #使用雪花算法生成主键
+reggie:
+  path: D:\JavaProject\reggie_take_out\upload\img\   #文件图片上传路径
